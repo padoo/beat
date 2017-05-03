@@ -30,6 +30,7 @@ https://docs.nativescript.org/ui/components.
         <Button text="GREEN" tap="{{ onTapGreen }}" class="btn btn-lime btn-primary btn-active"/>
         <Button text="BLUE" tap="{{ onTapBlue }}" class="btn btn-blue btn-primary btn-active"/>
         <Button text="RESET" tap="{{ onTapGrey }}" class="btn btn-grey btn-primary btn-active"/>
+        <Button text="HOLD" id="holdBtn" class="btn btn-primary btn-active"/>
         <Label text="{{ message }}" class="h2 text-center" textWrap="true"/>
     </StackLayout>
 </Page>
