@@ -34,19 +34,28 @@ function onNavigatingTo(args) {
      */
     page.bindingContext = createViewModel();
 
-
     var holdBtn = page.getViewById('holdBtn');
     holdBtn.on(gestures.GestureTypes.touch, function (args) {
         if (args.action === 'down') {
-            console.log('down');
             http.getString('http://192.168.240.1/arduino/break/0');
         }
 
         if (args.action === 'up') {
-            console.log('up');
             http.getString('http://192.168.240.1/arduino/break/1');
         }
     });
+
+    var hornBtn = page.getViewById('hornBtn');
+    hornBtn.on(gestures.GestureTypes.touch, function (args) {
+        if (args.action === 'down') {
+            http.getString('http://192.168.240.1/arduino/hupe/1');
+        }
+
+        if (args.action === 'up') {
+            http.getString('http://192.168.240.1/arduino/hupe/0');
+        }
+    });
+
 }
 
 /*

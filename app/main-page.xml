@@ -26,11 +26,12 @@ https://docs.nativescript.org/ui/components.
     -->
     <StackLayout class="p-20">
         <!--<Label text="STOP" class="h1 text-center"/>-->
-        <Button text="STOP" id="holdBtn" class="btn btn-ruby btn-primary btn-active"/>
-        <Button text="RESET" tap="{{ onTapGrey }}" class="btn btn-grey btn-primary btn-active"/>
-        <Button text="RED" tap="{{ onTapRed }}" class="btn-ruby btn-primary btn-active"/>
-        <Button text="GREEN" tap="{{ onTapGreen }}" class="btn-lime btn-primary btn-active"/>
-        <Button text="BLUE" tap="{{ onTapBlue }}" class="btn-blue btn-primary btn-active"/>
+        <Button text="Stop" id="holdBtn" class="btn btn-ruby btn-primary btn-active"/>
+        <Button text="Hupe" id="hornBtn" class="btn btn-orange btn-primary btn-active"/>
+        <Button text="Reset" tap="{{ onTapReset }}" class="btn btn-grey btn-primary btn-active"/>
+        <!-- <Button text="RED" tap="{{ onTapRed }}" class="btn-ruby btn-primary btn-active"/> -->
+        <!--<Button text="GREEN" tap="{{ onTapGreen }}" class="btn-lime btn-primary btn-active"/>-->
+        <!--<Button text="BLUE" tap="{{ onTapBlue }}" class="btn-blue btn-primary btn-active"/>-->
         <!--<Label text="{{ message }}" class="h2 text-center" textWrap="true"/>-->
     </StackLayout>
 </Page>
