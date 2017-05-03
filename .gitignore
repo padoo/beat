@@ -1,9 +1,3 @@
-jqm
-__pycache__
-jqm_playground/index.html
-/www/.htaccess
-www/dl/_h5ai
-Thumbs.db
-.idea/
-.settings/
-gib.iml
+.idea
+platforms
+node_modules
