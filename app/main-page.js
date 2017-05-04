@@ -34,8 +34,8 @@ function onNavigatingTo(args) {
      */
     page.bindingContext = createViewModel();
 
-    var holdBtn = page.getViewById('holdBtn');
-    holdBtn.on(gestures.GestureTypes.touch, function (args) {
+    var stopBtn = page.getViewById('stopBtn');
+    stopBtn.on(gestures.GestureTypes.touch, function (args) {
         if (args.action === 'down') {
             http.getString('http://192.168.240.1/arduino/break/0');
         }
